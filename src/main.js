@@ -1,0 +1,16 @@
+import { createApp } from 'vue';
+import App from './App.vue';
+import router from './router/index.js';
+import store from './store/index.js';
+
+const app = createApp(App);
+
+if (router) {
+    app.use(router);
+}
+
+if (store) {
+    app.use(store);
+}
+
+app.mount('#app');

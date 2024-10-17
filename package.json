@@ -1,0 +1,32 @@
+{
+  "devDependencies": {
+    "@eslint/js": "^9.12.0",
+    "@vue/cli-service": "^5.0.8",
+    "eslint": "^9.12.0",
+    "eslint-config-eslint": "^11.0.0",
+    "eslint-define-config": "^2.1.0",
+    "globals": "^15.10.0",
+    "htmlhint": "^1.1.4",
+    "jest": "^29.0.0",
+    "stylelint": "^14.16.1",
+    "stylelint-config-prettier": "^9.0.5",
+    "stylelint-config-scss": "^1.0.0-security",
+    "stylelint-config-standard": "^29.0.0",
+    "stylelint-config-standard-scss": "^4.0.0",
+    "stylelint-config-vue": "^1.0.0",
+    "stylelint-scss": "^4.7.0"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "htmlhint": "htmlhint ./src/**/*.html",
+    "lint:css": "stylelint \"**/*.vue\" \"**/*.css\" \"**/*.scss\"",
+    "test": "jest --coverage",
+    "serve": "vue-cli-service serve"
+  },
+  "dependencies": {
+    "@vue/compiler-sfc": "^3.5.12",
+    "vue": "^3.5.12",
+    "vue-router": "^4.4.5",
+    "vuex": "^4.1.0"
+  }
+}
